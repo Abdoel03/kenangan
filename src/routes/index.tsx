@@ -111,7 +111,7 @@ function Index() {
       {/* Memories grid */}
       <section className="mx-auto max-w-6xl px-6 pb-28">
         <div className="grid gap-6 md:grid-cols-2">
-          {memories.map((m, i) => (
+          {memories.map((m) => (
             <article
               key={m.title}
               className="group overflow-hidden rounded-2xl border bg-card shadow-sm transition-shadow duration-500 hover:shadow-xl"
