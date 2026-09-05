@@ -127,10 +127,7 @@ function Index() {
                 />
               </div>
               <div className="p-7">
-                <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">
-                  {String(i + 1).padStart(2, "0")} · {m.date}
-                </p>
-                <h3 className="mt-2 font-display text-3xl font-medium">
+                <h3 className="font-display text-3xl font-medium">
                   {m.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
