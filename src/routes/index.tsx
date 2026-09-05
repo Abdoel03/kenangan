@@ -1,9 +1,10 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import hero from "@/assets/hero.jpg";
 import m1 from "@/assets/m1.jpg";
 import m2 from "@/assets/m2.jpg";
 import m3 from "@/assets/m3.jpg";
 import m4 from "@/assets/m4.jpg";
+import kenanganVideo from "@/assets/kenangan.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -99,13 +100,44 @@ function Index() {
           Bab Satu — Awal
         </p>
         <h2 className="mt-4 font-display text-4xl md:text-5xl font-medium leading-tight">
-          Cerita yang tumbuh pelan-pelan,
-          <br className="hidden md:block" /> seperti kopi yang diseduh pagi hari.
+          Berawal dari sebuah lapangan,
+          <br className="hidden md:block" /> tumbuh menjadi rumah bagi dua hati.
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-muted-foreground leading-relaxed">
-          Album ini kami rangkai dari potongan-potongan kecil: tawa di meja
-          kafe, langkah kaki di pasir, dan janji yang diikat di hari bahagia.
+          Album ini kami rangkai dari hal-hal kecil yang tak ingin kami lupakan:
+          nyaman yang datang tiba-tiba, ciuman paling bahagia, dan bucket bunga
+          yang kini berdampingan dengan bingkai foto kita berdua.
         </p>
+        <Link
+          to="/cerita"
+          className="mt-8 inline-block border-b border-foreground pb-1 text-sm tracking-[0.25em] uppercase transition-opacity hover:opacity-60"
+        >
+          Baca cerita lengkap kami →
+        </Link>
+      </section>
+
+      {/* Video */}
+      <section className="mx-auto max-w-5xl px-6 pb-24">
+        <div className="overflow-hidden rounded-2xl border bg-card shadow-sm">
+          <video
+            src={kenanganVideo.url}
+            poster={hero}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="aspect-video w-full object-cover"
+          />
+          <div className="p-7 text-center">
+            <p className="font-hand text-2xl md:text-3xl">
+              Sepotong kenangan yang bergerak
+            </p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Ruang ini disiapkan untuk video-video kita — hari ini satu, nanti
+              akan bertambah seiring cerita kita berjalan.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Memories grid */}
