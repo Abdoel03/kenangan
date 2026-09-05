@@ -31,25 +31,25 @@ const memories = [
   {
     src: m4,
     title: "Pertemuan Pertama",
-    text: "Sejak tatap pertama, dunia berhenti sejenak — seolah semesta ikut berbisik, 'ini adalah awalnya.'",
+    text: "Di lapangan itulah pertama kali kami bertemu. Kamu yang meminta, aku yang datang, dan tiba-tiba nyaman yang tak terduga menyelimuti kami berdua.",
     wide: true,
   },
   {
     src: m2,
-    title: "Senja di Tepi Pantai",
-    text: "Di antara debur ombak dan cahaya senja, aku menemukan rumah dalam pelukanmu yang tak pernah ingin kulepaskan.",
+    title: "Kenyamanan yang Tenang",
+    text: "Tak peduli di mana kaki melangkah, yang paling membekas adalah kenyamanan dalam — pelan, tenang, dan begitu pasti saat bersamamu.",
     wide: true,
   },
   {
     src: m1,
-    title: "Hari Bahagia",
-    text: "Hari di mana dua jiwa diikat dalam satu janji: mencintai, menemani, dan tumbuh bersama selamanya.",
+    title: "Ciuman Paling Bahagia",
+    text: "Ciuman itu bukan sekadar ciuman. Di dalamnya ada janji tanpa kata bahwa bahagia sejati adalah bersamamu, hari ini dan nanti.",
     wide: false,
   },
   {
     src: m3,
-    title: "Surat & Bunga Kering",
-    text: "Bunga-bunga layu dan surat-surat usang kita simpan — karena cinta sejati justru semakin harum seiring waktu.",
+    title: "Bucket Bunga & Bingkai Kita",
+    text: "Bucket bunga yang indah dan bingkai foto berdua — hadiah kecil yang kujaga dengan sayang, karena di dalamnya ada seluruh dunia kita.",
     wide: false,
   },
 ];
@@ -111,7 +111,7 @@ function Index() {
       {/* Memories grid */}
       <section className="mx-auto max-w-6xl px-6 pb-28">
         <div className="grid gap-6 md:grid-cols-2">
-          {memories.map((m, i) => (
+          {memories.map((m) => (
             <article
               key={m.title}
               className="group overflow-hidden rounded-2xl border bg-card shadow-sm transition-shadow duration-500 hover:shadow-xl"
