@@ -31,29 +31,25 @@ const memories = [
   {
     src: m4,
     title: "Pertemuan Pertama",
-    date: "Jakarta, 2019",
-    text: "Dua cangkir kopi, satu meja kecil, dan percakapan yang tak terasa hingga sore berganti malam.",
+    text: "Sejak tatap pertama, dunia berhenti sejenak — seolah semesta ikut berbisik, 'ini adalah awalnya.'",
     wide: true,
   },
   {
     src: m2,
     title: "Senja di Tepi Pantai",
-    date: "Bali, 2021",
-    text: "Kita berjalan tanpa tujuan, membiarkan ombak dan jejak kaki bercerita lebih banyak dari kata.",
+    text: "Di antara debur ombak dan cahaya senja, aku menemukan rumah dalam pelukanmu yang tak pernah ingin kulepaskan.",
     wide: true,
   },
   {
     src: m1,
     title: "Hari Bahagia",
-    date: "Yogyakarta, 2023",
-    text: "Di depan keluarga dan sahabat, dua janji diucapkan — dan satu perjalanan baru dimulai.",
+    text: "Hari di mana dua jiwa diikat dalam satu janji: mencintai, menemani, dan tumbuh bersama selamanya.",
     wide: false,
   },
   {
     src: m3,
     title: "Surat & Bunga Kering",
-    date: "Setiap hari",
-    text: "Hal-hal kecil yang kita simpan: surat pendek, bunga yang mengering, dan foto yang mulai memudar.",
+    text: "Bunga-bunga layu dan surat-surat usang kita simpan — karena cinta sejati justru semakin harum seiring waktu.",
     wide: false,
   },
 ];
@@ -131,10 +127,7 @@ function Index() {
                 />
               </div>
               <div className="p-7">
-                <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">
-                  {String(i + 1).padStart(2, "0")} · {m.date}
-                </p>
-                <h3 className="mt-2 font-display text-3xl font-medium">
+                <h3 className="font-display text-3xl font-medium">
                   {m.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
